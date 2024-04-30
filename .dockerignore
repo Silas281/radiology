@@ -1,0 +1,20 @@
+# Ignore Python bytecode files
+*.pyc
+
+# Ignore virtual environment directories
+.venv/
+
+# Ignore database files
+*.sqlite3
+
+# Ignore static files
+/staticfiles/
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+
+# Ignore Docker-related files and directories
+.dockerignore
+.docker/
+.docker-compose.yml

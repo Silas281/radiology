@@ -1,0 +1,49 @@
+
+
+.report-detail-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.report-detail-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.report-details {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.report-details p {
+  margin-bottom: 10px;
+}
+
+.loading {
+  font-style: italic;
+  color: #888;
+}
+
+.delete-button{
+  background: rgb(220, 53, 69);
+  padding: 5px 10px;
+  
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.update-button{
+  background: #283e4a;
+  padding: 5px 10px;
+ 
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.actions-container{
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,143 @@
+.report-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+.filter-container {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: end;
+}
+
+.filter-container label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.filter-container select {
+  padding: 8px 15px;
+  border: 1px solid #ef477f;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #ef477f;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.filter-container select:hover {
+  background-color: #ef477f;
+  color: #fff;
+}
+
+.filter-container select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(239, 71, 127, 0.5);
+}
+
+.filter-container select option {
+  background-color: #fff;
+  color: #ef477f;
+}
+
+.filter-container select option:hover {
+  background-color: #ef477f;
+  color: #fff;
+}
+
+
+
+.report-list-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.display-header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px ;
+  padding-right: 30px;
+  background-color: #ef477f;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.status-header{
+  margin-left: 100px;
+}
+
+ul {
+  padding: 0 !important;
+}
+
+.report-item {
+  display: flex !important;
+  justify-content: space-between !important;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.report-item:hover {
+  background-color: #eaeaea;
+}
+
+.items-box {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.report-title {
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.report-status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.status-new {
+  background-color: rgba(0, 123, 255, 0.2);
+}
+
+.status-unread {
+  background-color: rgba(220, 53, 69, 0.2);
+}
+
+.status-prelim {
+  background-color: rgba(255, 193, 7, 0.2);
+}
+
+.status-final {
+  background-color: rgba(40, 167, 69, 0.2);
+}
+
+.view-details-link,
+.create-report-link {
+  padding: 5px 10px;
+  border: 1px solid #ef477f;
+  border-radius: 5px;
+  color: #ef477f;
+  text-decoration: none;
+}
+
+.create-report-link-conatainer{
+  margin-top: 50px;
+  
+}
+
+.view-details-link:hover,
+.create-report-link:hover {
+  background-color: #ef477f;
+  color: #fff;
+  text-decoration: none;
+}

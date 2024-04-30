@@ -1,0 +1,49 @@
+# Python files
+*.pyc
+__pycache__/
+
+# Database
+*.sqlite3
+
+# Static files
+/staticfiles/
+
+# Virtual environment
+.venv/
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Compiled Python files
+*.pyc
+
+# Ignore Django migration files
+**/migrations/
+
+# Node.js files
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Compiled JavaScript files
+/build/
+/dist/
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# Editor temporary files
+*.swp
+
+# Mac OS X
+.DS_Store
+
+# IDE settings
+/.vscode/
+/.idea/
+/data/mysql/db/mysql.sock

@@ -1,0 +1,36 @@
+version: "3.9"
+
+services:
+  app:
+    build: 
+      context: .
+    volumes:
+      - .:/django
+    ports:
+      - "8000:8000"
+    image: app:django
+    container_name: django_container
+    # command: python manage.py runserver 0.0.0.0:8000
+    depends_on:
+      - db 
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "--silent", "http://localhost:8000/healthcheck"]
+      interval: 10s  # Check every 10 seconds
+      timeout: 5s    # Timeout after 5 seconds
+      retries: 5
+
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_DATABASE: 'reports_db'
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'true'
+    volumes:
+      - ./data/mysql/db:/var/lib/mysql
+
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root"]
+      interval: 10s  # Check every 10 seconds
+      timeout: 5s    # Timeout after 5 seconds
+      retries: 5
+
+  
