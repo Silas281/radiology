@@ -46,4 +46,4 @@ yarn.lock
 # IDE settings
 /.vscode/
 /.idea/
-/data/mysql/
+/data
